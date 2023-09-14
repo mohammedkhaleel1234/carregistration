@@ -1,0 +1,360 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=REM&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+    font-family: 'Outfit', sans-serif;
+}
+.displayflex{
+    display: flex;
+    margin-top: 55px;
+   justify-content: space-around;
+}
+
+.divisionone{
+    
+    background-color: white;
+    
+    
+    border-radius: 10px;
+    width: 650px;
+    width: 50%;
+    margin: auto;
+    height: 100vh;   
+}
+body{
+    background: url(../images/bgimage.jpg);
+}
+.display{
+    display: flex;
+    margin-bottom: 50px;
+}
+
+
+
+
+.div{
+    display:grid;
+  grid-template-columns: (4 auto);
+  justify-content: center;
+  
+  margin-top: 68px;
+}
+
+
+.inputtag{
+    
+    
+    
+    
+    width: 300px;
+    padding-top: 0px;
+    font-family: 'REM', sans-serif;
+    margin-bottom: 0px;
+    background-color: white;
+    color: rgb(0, 0, 0);
+    border: none;
+    height: 30px;
+    
+    border: none;
+    font-size: 12px;
+    padding-left: 15px;
+    border: 2px solid rgba(66, 159, 247,.5);
+    border-radius: 10px;
+    outline: none;
+}
+.inputtagone{
+    width: 300px;
+    font-family: 'REM', sans-serif;
+    margin-bottom: 0px;
+    background-color: white;
+    color: rgb(14, 10, 10);
+    border: none;
+    height: 30px;
+    
+    font-size: 12px;
+    padding-left: 15px;
+    border: 2px solid rgba(66, 159, 247,.5);
+    border-radius: 10px;
+    outline: none;
+}
+.displaythree{
+    display: flex;
+    justify-content: space-between;
+}
+.inputtagtwo{
+    width: 300px;
+    font-family: 'REM', sans-serif;
+    margin-bottom: 0px;
+    background-color: white;
+    color: rgb(12, 10, 10);
+    border: none;
+    height: 30px;
+    
+    font-size: 12px;
+    padding-left: 15px;
+    border: 2px solid rgba(66, 159, 247,.5);
+    border-radius: 10px;
+    outline: none;
+    position: relative;
+    left: 7px;
+}
+.inputtagthree{
+    width: 300px;
+    font-size: 12px;
+    padding-left: 15px;
+    margin-bottom: 0px;
+    background-color: white;
+    color: rgb(19, 14, 14);
+    border: none;
+    height: 30px;
+    font-family: 'REM', sans-serif;
+    
+    border: 2px solid rgba(66, 159, 247,.5);
+    border-radius: 10px;
+    outline: none;
+}
+.createbtn{
+    height: 46px;
+    width: 98px;
+    background-color: rgb(1,191,249);
+    color: white;
+    border: none;
+    margin-left: 270px;
+    border-radius: 10px;
+    margin-bottom:-15px;
+    margin-top: 30px;
+    font-family: 'REM', sans-serif;
+    position: relative;
+    top: 20px;
+    
+}
+.createbtnone{
+    height: 40px;
+    width: 0px;
+    background-color: rgb(20, 20, 85);
+    color: white;
+    border: none;
+    margin-left: 0px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+
+.createbtntwo{
+    height: 46px;
+    width: 98px;
+    background-color: rgba(238, 5, 5, 0.986);
+    color: white;
+    border: none;
+    margin-left: 363px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    margin-top: -12px;
+    
+}
+.head{
+    
+    color: rgb(0, 0, 0);
+    margin-top: 0px;
+    font-size: x-large;
+    margin-right: 40px;
+}
+.headone{
+   
+    color: rgb(5, 1, 1);
+    margin-top: 0px;
+    font-size: x-large;
+}
+.headtwo{
+    
+    color: rgb(3, 1, 1);
+    margin-top: 0px;
+    font-size: x-large;
+}
+.headthree{
+   
+    color: rgb(0, 0, 0);
+    margin-top: 0px;
+    font-size: x-large;
+}
+.headfour{
+    
+    color: rgb(0, 0, 0);
+    margin-top: 0px;
+    font-size: x-large;
+}
+.headfive{
+    
+    color: rgb(2, 0, 0);
+    margin-top: 0px;
+    font-size: x-large;
+}
+.headsix{
+    
+    color: rgb(0, 0, 0);
+    margin-top: 0px;
+    font-size: x-large;
+}
+.change{
+    font-size: 15px;
+   
+    margin-top: 20px;
+    color: black;
+    background: transparent;
+    border: 1px solid white;
+    width: 150px;
+    height: 30px;
+    outline: none;
+    margin-right: 68px;
+    margin-left: 60px;
+    border-radius: 10px;
+    padding-left: 5px;
+}
+.changeone{
+    font-size: 15px;
+    
+    color: black;
+    background: transparent;
+    border: 1px solid white;
+    width: 150px;
+    height: 30px;
+    outline: none;
+    margin-right: 30px;
+    border-radius: 10px;
+    padding-left: 5px;
+
+}
+.changetwo{
+    font-size: 15px;
+   
+    color: black;
+    background: transparent;
+    border: 1px solid white;
+    width: 150px;
+    height: 30px;
+    outline: none;
+    margin-right: 23px;
+    border-radius: 10px;
+    padding-left: 5px;
+}
+.changethree{
+    font-size: 15px;
+    
+    color: black;
+    background: transparent;
+    border: 1px solid white;
+    width: 150px;
+    height: 30px;
+    outline: none;
+    margin-right: 33px;
+    border-radius: 10px;
+    padding-left: 5px;
+}
+
+.delete{
+    
+    color: rgb(0, 0, 0);
+   
+    margin-right: 165px;
+}
+.Edit{
+    
+    color: rgb(0, 0, 0);
+   
+    margin-right: 158px;
+   
+}
+.Save{
+    
+    color: rgb(2, 1, 1);
+    
+    
+}
+
+.registerbutton{
+    background-color: rgb(97, 1, 84);
+    border: none;
+    border-radius: 10px;
+    width:210px;
+    height: 50px;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'REM', sans-serif;
+    color: rgb(237, 234, 240);
+    margin-top: 206px;
+    margin-left: 135px;
+    
+}
+.header{
+    color: black;
+    text-align: center;
+    position: relative;
+    top: 60px;
+    font-size: 36px;
+    margin-bottom: 100px;
+    
+}
+.displaytwo{
+    display: flex;
+    margin-bottom: 50px;
+}
+.heads{
+    
+    color: black;
+    font-size: x-large;
+    margin-right: 40px;
+    
+}
+.backgroundimageone{
+    background-image: url(../images/welcome-removebg-preview.png);
+    
+    
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: -1;
+    top: 190px;
+    left: 0px;
+    margin-left: 428px;
+    
+}
+
+.createbtnthree{
+    width: 77px;
+    height: 35px;
+    background-color: black;
+    color: white;
+    border: none;
+   
+    margin-right: 0px;
+    margin-top: 0px;
+    border-radius: 10px;
+    float: right;
+    position: relative;
+    top: -45px;
+    right: 125px;
+   
+    
+    
+    
+}
+body{
+   
+    background-size: cover;
+    background-repeat: no-repeat;
+   
+
+}
+.divisiontwo{
+   
+    justify-content: space-between;
+
+}
+
+.displayone{
+    display: flex;
+    margin-bottom: 50px;
+    
+}

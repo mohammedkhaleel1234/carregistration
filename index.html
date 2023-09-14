@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/crudoperation.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
+</head>
+<body>
+    <div class="maindivision">
+        <div class="backgroundimageone">
+            <div >
+                <button class="registerbutton">BOOK NOW</button>
+            </div>
+        </div>
+    </div>
+    <div class="maindivisionone">
+        <div class="divisionone"> 
+            <h1 class="header">CAR  REGISTRATION  FORM</FORM></h1>
+            <div class="div">
+                <div class="display">
+                    <div>
+                        <label class="head" >Name :</label>
+                    </div>
+                    <div>
+                        <input class="inputtag" type="text"  placeholder="Enter Your Name">
+                    </div>
+                </div>
+                <div class="displayone">
+                    <div>
+                        <label class="heads">Brand :</label>
+                    </div>
+                    <div>
+                        <input type="text" class="inputtagone" placeholder="Enter Your Brand">
+                    </div>
+                </div>
+                <div class="displaytwo">
+                    <div>
+                        <label class="heads">Color :</label>
+                    </div>
+                    <div>
+                        <input type="text" class="inputtagtwo" placeholder="Color">
+                    </div>
+                </div>
+                <div class="displaythree">
+                    <div>
+                        <label class="heads">Price :</label>
+                    </div>
+                    <div>
+                        <input type="number" class="inputtagthree" placeholder="Price">
+                    </div>
+                </div>
+            
+            
+            
+            
+            
+            
+            
+            
+            </div>
+            <button class="createbtn">Create</button>
+            
+        </div>
+    </div>
+
+    
+    
+
+    
+    
+    
+
+    <div class="divisiontwo">
+        <div class="divisionthree">
+            <div>
+                <button class="createbtnthree">Back</button>
+            </div>
+        </div>
+    <div class="border">
+        <div class="displayflex">
+            
+            <h1 class="head">Name</h1>
+            <h1 class="headone">Brand</h1>
+            <h1 class="headtwo">Color</h1>
+            <h1 class="headthree">Price</h1>
+            <h1 class="headfour">Edit</h1>
+            <h1 class="headfive">delete</h1>
+            <h1 class="headsix">Save</h1>
+        </div>
+ 
+         <div>
+        <ul class="ultag">
+            
+        </ul>
+    </div>
+</div>
+    
+    </div>
+    
+    
+    
+    
+       
+    
+
+
+    <script>
+        let input = document.querySelector(".inputtag");
+        let inputone = document.querySelector(".inputtagone");
+        let inputtwo = document.querySelector(".inputtagtwo");
+        let inputthree = document.querySelector(".inputtagthree");
+        let buttonone = document.querySelector(".createbtn");
+        let buttontwo = document.querySelector(".createbtntwo");
+        let buttonthree = document.querySelector(".createbtnthree")
+        let ultagone = document.querySelector(".ultag");
+        let divisionone = document.querySelector(".divisionone");
+        let divisiontwo = document.querySelector(".divisiontwo");
+        let display = document.querySelector(".displayflex");
+        let registerone = document.querySelector(".registerbutton");
+        
+        
+
+
+        divisionone.style.display = "none";
+        divisiontwo.style.display = "none";
+
+        registerone.addEventListener("click",registerfunction);
+
+        function registerfunction(){
+           
+            divisionone.style.display = "block";
+            divisiontwo.style.display = "none";
+            registerone.style.display= "none";
+        }
+
+
+
+        
+
+        buttonone.addEventListener("click",clickfunction);
+
+
+        function clickfunction(event){
+            event.preventDefault();
+
+           registerone.style.display= "none";
+           divisionone.style.display = "none";
+           divisiontwo.style.display = "block";
+           
+            let newdivision = document.createElement("div");
+            ultagone.appendChild(newdivision);
+
+
+            let newinput = document.createElement("input");
+            newdivision.appendChild(newinput);
+            newinput.value=input.value;
+            newinput.setAttribute("readonly","readonly");
+            newinput.classList.add("change")
+
+
+            let newinputtag = document.createElement("input");
+            newdivision.appendChild(newinputtag);
+            newinputtag.value=inputone.value;
+            newinputtag.setAttribute("readonly","readonly");
+            newinputtag.classList.add("changeone")
+
+
+
+
+            let newinputtagone = document.createElement("input");
+            newdivision.appendChild(newinputtagone);
+            newinputtagone.value=inputtwo.value;
+            newinputtagone.setAttribute("readonly","readonly");
+            newinputtagone.classList.add("changetwo")
+
+
+
+
+            let newinputtagtwo = document.createElement("input");
+            newdivision.appendChild(newinputtagtwo);
+            newinputtagtwo.value=inputthree.value;
+            newinputtagtwo.setAttribute("readonly","readonly");
+            newinputtagtwo.classList.add("changethree")
+
+
+            let editbutton = document.createElement("i");
+            editbutton.className= "bi bi-pencil-square"
+            newdivision.appendChild(editbutton);
+            editbutton.classList.add("Edit")
+
+            editbutton.addEventListener("click",editfunction);
+
+            function editfunction(){
+
+                newinput.removeAttribute("readonly","readonly");
+                newinputtag.removeAttribute("readonly","readonly");
+                newinputtagone.removeAttribute("readonly","readonly");
+                newinputtagtwo.removeAttribute("readonly","readonly");
+
+            }
+
+            
+            let deletebutton = document.createElement("i");
+            deletebutton.className = "bi bi-trash3"
+            newdivision.appendChild(deletebutton);
+            deletebutton.classList.add("delete")
+
+            deletebutton.addEventListener("click",deletefunction);
+
+            function deletefunction(){
+
+                newdivision.style.display= "none";
+
+            }
+
+
+            let savebutton = document.createElement("i");
+            savebutton.className = "bi bi-arrow-down-square"
+            newdivision.appendChild(savebutton);
+            savebutton.classList.add("Save")
+
+
+            savebutton.addEventListener("click",savefunction);
+
+            function savefunction(){
+
+                newinput.setAttribute("readonly","readonly");
+                newinputtag.setAttribute("readonly","readonly");
+                newinputtagone.setAttribute("readonly","readonly");
+                newinputtagtwo.setAttribute("readonly","readonly");
+            }
+
+        
+
+            buttonthree.addEventListener("click",backfunction);
+
+            function backfunction(){
+
+                divisiontwo.style.display = "none";
+                divisionone.style.display = "block";
+
+            }
+
+
+
+        
+
+            
+        }
+
+
+
+    </script>
+
+    
+    
+</body>
+</html>
